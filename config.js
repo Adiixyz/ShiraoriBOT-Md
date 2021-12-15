@@ -1,4 +1,4 @@
-global.owner = ['6281351047727'] // Put your number here
+global.owner = ['60199782326'] // Put your number here
 global.mods = [] // Want some help?
 global.prems = [] // Premium user has unlimited limit
 global.APIs = { // API Prefix
@@ -21,10 +21,10 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-global.packname = 'ShiraoriBOT Multi device'
-global.author = 'Ilman'
+global.packname = 'AdyyBotz Multi device'
+global.author = 'Adiixyz'
 
-global.multiplier = 69 // The higher, The harder levelup
+global.multiplier = 10 // The higher, The harder levelup
 
 global.rpg = {
   emoticon(string) {
