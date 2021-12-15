@@ -3,35 +3,35 @@ let fs = require('fs')
 let path = require('path')
 let levelling = require('../lib/levelling')
 let tags = {
-  'main': 'MENU UTAMA',
-  'group': 'MENU GROUP',
-  'fun': 'MENU FUN',
-  'internet': 'MENU INTERNET',
-  'anime'; 'MENU ANIME',
-  'owner': 'MENU OWNER',
+  'main': 'MAIN',
+  'group': 'GROUP',
+  'fun': 'FUN',
+  'internet': 'INTERNET',
+  'anime'; 'ANIME',
+  'owner': 'OWNER',
   'advanced': 'Advanced',
-  'info': 'MENU INFO',
+  'info': 'INFO',
 }
 const defaultMenu = {
   before: `
-╭─「 %me 」
-│ Hai, %name!
-│
-│ Tersisa *%limit Limit*
-│ Role *%role*
-│ Level *%level (%exp / %maxexp)* [%xp4levelup lagi untuk levelup]
-│ %totalexp XP in Total
-│ 
-│ Tanggal: *%week %weton, %date*
-│ Tanggal Islam: *%dateIslamic*
-│ Waktu: *%time*
-│
-│ Runtime: *%uptime*
-╰────
+%me • Bot
+
+Hi %name!
+Tersisa *%limit Limit*
+Role *%role*
+Level *%level (%exp / %maxexp)* [%xp4levelup lagi untuk levelup]
+%totalexp XP in Total
+
+Tanggal: *%week %weton, %date*
+Tanggal Islam: *%dateIslamic*
+Waktu: *%time*
+
+Runtime: *%uptime*
+
 %readmore`.trimStart(),
-  header: '╭─「 %category 」',
-  body: '│ • %cmd %islimit %isPremium',
-  footer: '╰────\n',
+  header: '*%category*',
+  body: '%cmd %islimit %isPremium',
+  footer: '\n',
   after: `
 *%npmname@^%version*
 ${'```%npmdesc```'}
@@ -140,14 +140,14 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
            hydratedButtons: [{
              urlButton: {
                displayText: 'Source Code',
-               url: 'https://github.com/ilmanhdyt/ShiraoriBOT-MD'
+               url: 'https://github.com/Adiixyz'
              }
 
            },
                {
              callButton: {
                displayText: 'Call Owner',
-               phoneNumber: '+62 813-5104-7727'
+               phoneNumber: '+60199782326'
              }
            },
                {
